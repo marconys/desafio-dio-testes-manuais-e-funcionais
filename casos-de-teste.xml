@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10001</projectId>
+    <projectKey>PM</projectKey>
+    <exportDate>2023-10-24 15:11:18 UTC</exportDate>
+    <folders>
+        <folder fullPath="Login" index="0"/>
+        <folder fullPath="Reset-de-senha" index="1"/>
+    </folders>
+    <testCases>
+        <testCase id="105437874" key="PM-T1">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Marcony Pinheiro de Moura</createdBy>
+            <createdOn>2023-10-23 23:39:40 UTC</createdOn>
+            <customFields/>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Cliente sem cadastro tenta fazer login]]></name>
+            <owner>712020:5b76c12b-4b82-455e-aded-32f47765fe4c</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Acessar a URL https://www.saucedemo.com/]]></description>
+                        <expectedResult><![CDATA[O cliente deve visualizar a tela de login]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="105453035" key="PM-T2">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Marcony Pinheiro de Moura</createdBy>
+            <createdOn>2023-10-24 02:00:39 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Cliente Clica em Finalizar Compra]]></name>
+            <owner>712020:5b76c12b-4b82-455e-aded-32f47765fe4c</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given Clica no botão finalizar compra
+
+And Não está com a sessão ativa
+
+When Redirecinado para a tela de login
+
+Then Valida novamente seu usuário e senha]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="105454771" key="PM-T3">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Marcony Pinheiro de Moura</createdBy>
+            <createdOn>2023-10-24 02:32:29 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login]]></folder>
+            <issues>
+                <issue>
+                    <key>PM-2</key>
+                    <summary><![CDATA[O usuário ao acessar a página de login na loja virtual deve visualizar opções de login, cadastro e redefinição de senha]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente Sem cadastro tenta cadastrar-se]]></name>
+            <owner>712020:5b76c12b-4b82-455e-aded-32f47765fe4c</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Cliente clica no bot&atilde;o novo cadastro]]></description>
+                        <expectedResult><![CDATA[Cliente &eacute; redirecionado a tela de novo cadastro]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Preenche o formul&aacute;rio com seu dados pessoais]]></description>
+                        <expectedResult><![CDATA[Cadastro Efetuado e cliente redirecionado a p&aacute;gina home]]></expectedResult>
+                        <testData><![CDATA[Nome: &quot;Mauro Silva&quot;, CPF: 012.345.789-10, Telefone: (11) 95236-5214]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="105517528" key="PM-T4">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Marcony Pinheiro de Moura</createdBy>
+            <createdOn>2023-10-24 14:45:13 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Reset-de-senha]]></folder>
+            <issues>
+                <issue>
+                    <key>PM-8</key>
+                    <summary><![CDATA[O usuário ao clicar no botão "esqueci minha senha" deve visualizar um form com três inputs: "email", "nova senha" e "confirmar nova senha"]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente solicitara alteração de senha]]></name>
+            <owner>712020:5b76c12b-4b82-455e-aded-32f47765fe4c</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given Cliente preenche form de reset de senha
+
+And O email está cadastrado na conta
+
+When Senha é redefinida com sucesso
+
+Then Cliente redirecionado a tela de login]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="105517786" key="PM-T5">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Marcony Pinheiro de Moura</createdBy>
+            <createdOn>2023-10-24 14:52:20 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Reset-de-senha]]></folder>
+            <issues>
+                <issue>
+                    <key>PM-8</key>
+                    <summary><![CDATA[O usuário ao clicar no botão "esqueci minha senha" deve visualizar um form com três inputs: "email", "nova senha" e "confirmar nova senha"]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente solicita nova senha para e-mail não cadastrado]]></name>
+            <owner>712020:5b76c12b-4b82-455e-aded-32f47765fe4c</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[O usu&aacute;rio preenche o formul&aacute;rio e informa e-mail n&atilde;o cadastrado]]></description>
+                        <expectedResult><![CDATA[O usu&aacute;rio deve visualizar um erro de e-mail informado n&atilde;o est&aacute; na nossa base de dados.]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
